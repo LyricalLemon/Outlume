@@ -3,8 +3,8 @@
 
 ### 1. Project Overview
 **Name:** Outlume
-**Goal:** Build a "lean" Everbee/ListingView alternative. A personal, internal market research tool that pulls public Etsy listing data, tracks it over time, and aggregates the data to highlight outliers, high-velocity products, and top-performing keyword tags.
-**Constraint:** Must operate entirely on public data using the Etsy Open API v3 (Personal Access Tier - 10,000 requests/day).
+**Goal:** Build a "lean" Everbee/ListingView alternative. A strictly personal, internal, non-commercial market research tool that pulls public Etsy listing data, tracks it over time, and aggregates the data to highlight outliers, high-velocity products, and top-performing keyword tags. The hosted web interface acts entirely as an internal data dashboard, not a commercial SaaS product, to strictly comply with Etsy's Personal Access Tier API policies.
+**Constraint:** Must operate entirely on public data using the Etsy Open API v3 (Personal Access Tier - 10,000 requests/day). No commercialization or external user access.
 
 ---
 

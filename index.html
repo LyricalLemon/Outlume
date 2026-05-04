@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlume Dashboard - Internal Tools</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Outlume</span>
+                <span class="badge">INTERNAL</span>
+            </div>
+            <nav class="side-nav">
+                <a href="#" class="nav-item active">📊 Dashboard</a>
+                <a href="#" class="nav-item">📈 Tracked Listings</a>
+                <a href="#" class="nav-item">🔑 Keyword Analyzer</a>
+                <a href="#" class="nav-item">⚙️ Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Market Research Overview</h2>
+                <div class="user-profile">
+                    <span>Admin Access</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <!-- KPI Cards -->
+            <section class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon">📈</div>
+                    <div class="kpi-info">
+                        <h3>Daily Velocity Tracking</h3>
+                        <p class="kpi-value">12,450</p>
+                        <p class="kpi-label">Views Tracked Today</p>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">🕵️</div>
+                    <div class="kpi-info">
+                        <h3>Traction Estimation</h3>
+                        <p class="kpi-value">~340</p>
+                        <p class="kpi-label">Est. Daily Sales in DB</p>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">💎</div>
+                    <div class="kpi-info">
+                        <h3>Highest Outlier Score</h3>
+                        <p class="kpi-value">98.5</p>
+                        <p class="kpi-label">Listing ID #84920</p>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">🔑</div>
+                    <div class="kpi-info">
+                        <h3>Keyword Extraction</h3>
+                        <p class="kpi-value">"vintage rings"</p>
+                        <p class="kpi-label">Top Performing Tag</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Table -->
+            <section class="data-section">
+                <div class="section-header">
+                    <h3>Recent High-Velocity Outliers</h3>
+                    <button class="btn btn-sm btn-primary">Refresh Data</button>
+                </div>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Listing ID</th>
+                                <th>Title</th>
+                                <th>Daily Views</th>
+                                <th>Favorites Vel.</th>
+                                <th>Outlier Score</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#84920</td>
+                                <td>Handmade Silver Ring...</td>
+                                <td><span class="text-green">+142</span></td>
+                                <td><span class="text-green">+24</span></td>
+                                <td><span class="score high">98.5</span></td>
+                                <td><button class="btn btn-xs">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>#84112</td>
+                                <td>Custom Leather Wallet...</td>
+                                <td><span class="text-green">+89</span></td>
+                                <td><span class="text-green">+15</span></td>
+                                <td><span class="score high">85.2</span></td>
+                                <td><button class="btn btn-xs">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>#99201</td>
+                                <td>Minimalist Desk Mat...</td>
+                                <td><span class="text-green">+64</span></td>
+                                <td><span class="text-green">+8</span></td>
+                                <td><span class="score medium">72.0</span></td>
+                                <td><button class="btn btn-xs">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>#10294</td>
+                                <td>Personalized Dog Collar...</td>
+                                <td><span class="text-green">+45</span></td>
+                                <td><span class="text-yellow">+4</span></td>
+                                <td><span class="score medium">61.5</span></td>
+                                <td><button class="btn btn-xs">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
