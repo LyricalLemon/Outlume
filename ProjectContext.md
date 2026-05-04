@@ -90,3 +90,4 @@ When a niche is queried, pull the `tags` array from the top 50 fastest-growing l
 5.  **Tracker Script:** Write `daily_update.py` to loop through saved `listing_id`s, fetch their current views/favorites, and log them in `Daily_Metrics`.
 6.  **Analysis Script:** Write the SQL queries to calculate the Outlier Score and Tag Frequencies.
 7.  **Frontend Generation:** Display the results in a simple HTML table sorted by Outlier Score.
+8.  **Frontend Layout Expansion:** Created mockups for /dashboard, /tracking_listings, /keyword_analyser, and /settings to build out the internal tool UI framework.

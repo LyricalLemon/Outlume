@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Outlume</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Outlume</span>
+                <span class="badge">INTERNAL</span>
+            </div>
+            <nav class="side-nav">
+                <a href="index.html" class="nav-item">📊 Dashboard</a>
+                <a href="tracking_listings.html" class="nav-item">📈 Tracked Listings</a>
+                <a href="keyword_analyser.html" class="nav-item">🔑 Keyword Analyser</a>
+                <a href="settings.html" class="nav-item active">⚙️ Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Settings</h2>
+                <div class="user-profile">
+                    <span>Admin Access</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="data-section" style="max-width: 600px;">
+                <div class="section-header">
+                    <h3>API & System Configuration</h3>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Etsy API Key (v3)</label>
+                    <input type="password" value="************************" disabled style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid var(--surface-border); background: rgba(0,0,0,0.2); color: white; opacity: 0.7;">
+                    <small style="color: var(--text-muted); display: block; margin-top: 0.25rem;">Configured via .env file</small>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Cron Job Status</label>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--success);"></span>
+                        <span>Active - Last run: Today 00:00 UTC</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Sales Estimation Multiplier</label>
+                    <input type="number" value="2.0" step="0.1" style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid var(--surface-border); background: rgba(0,0,0,0.2); color: white;">
+                    <small style="color: var(--text-muted); display: block; margin-top: 0.25rem;">Multiplier applied to daily favorites to estimate daily sales.</small>
+                </div>
+
+                <button class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Save Settings</button>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
