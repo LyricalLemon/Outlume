@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Analyser - Outlume</title>
+    <link rel="stylesheet" href="assets/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="glow-bg"></div>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Outlume</span>
+                <span class="badge">INTERNAL</span>
+            </div>
+            <nav class="side-nav">
+                <a href="index.html" class="nav-item">📊 Dashboard</a>
+                <a href="tracking_listings.html" class="nav-item">📈 Tracked Listings</a>
+                <a href="keyword_analyser.html" class="nav-item active">🔑 Keyword Analyser</a>
+                <a href="settings.html" class="nav-item">⚙️ Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Keyword Analyser</h2>
+                <div class="user-profile">
+                    <span>Admin Access</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="data-section" style="margin-bottom: 2rem;">
+                <div class="section-header">
+                    <h3>Analyze Niche Keywords</h3>
+                </div>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                    <input type="text" id="niche-input" placeholder="Enter a niche or seed keyword..." style="flex: 1; padding: 0.75rem; border-radius: 6px; border: 1px solid var(--surface-border); background: rgba(0,0,0,0.2); color: white;">
+                    <button class="btn btn-primary" id="extract-btn" style="padding: 0 1.5rem;">Extract Tags</button>
+                    <button class="btn btn-primary" id="seed-btn" style="padding: 0 1.5rem; background: var(--success); border-color: var(--success);">Seed Niche Data</button>
+                </div>
+                <p style="color: var(--text-muted);">This tool extracts the most frequent tags from the top 50 fastest-growing listings in the entered niche.</p>
+            </section>
+            
+            <section class="data-section">
+                <div class="section-header">
+                    <h3>Top Performing Tags (Mockup)</h3>
+                </div>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Tag Name</th>
+                                <th>Frequency</th>
+                                <th>Outlier Score (Avg)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tags-table-body">
+                            <tr>
+                                <td colspan="3" style="text-align: center; color: var(--text-muted); padding: 2rem;">Run an analysis to see results here.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/keywords.js"></script>
+</body>
+
+</html>

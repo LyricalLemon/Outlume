@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+*.sqlite
+*.db
+*.db-wal
+*.db-shm
+backend/db/outlume.db
+backend/db/outlume.db-wal
+backend/db/outlume.db-shm
+venv/
+env/
+.idea/
+.vscode/

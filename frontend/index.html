@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outlume Dashboard - Internal Tools</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/index.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -45,7 +45,7 @@
                     <div class="kpi-icon">📈</div>
                     <div class="kpi-info">
                         <h3>Daily Velocity Tracking</h3>
-                        <p class="kpi-value">12,450</p>
+                        <p class="kpi-value" id="kpi-views">0</p>
                         <p class="kpi-label">Views Tracked Today</p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     <div class="kpi-icon">🕵️</div>
                     <div class="kpi-info">
                         <h3>Traction Estimation</h3>
-                        <p class="kpi-value">~340</p>
+                        <p class="kpi-value" id="kpi-sales">0</p>
                         <p class="kpi-label">Est. Daily Sales in DB</p>
                     </div>
                 </div>
@@ -61,15 +61,15 @@
                     <div class="kpi-icon">💎</div>
                     <div class="kpi-info">
                         <h3>Highest Outlier Score</h3>
-                        <p class="kpi-value">98.5</p>
-                        <p class="kpi-label">Listing ID #84920</p>
+                        <p class="kpi-value" id="kpi-score">0</p>
+                        <p class="kpi-label" id="kpi-score-label">Listing ID #---</p>
                     </div>
                 </div>
                 <div class="kpi-card">
                     <div class="kpi-icon">🔑</div>
                     <div class="kpi-info">
                         <h3>Keyword Extraction</h3>
-                        <p class="kpi-value">"vintage rings"</p>
+                        <p class="kpi-value" id="kpi-tag">"---"</p>
                         <p class="kpi-label">Top Performing Tag</p>
                     </div>
                 </div>
@@ -93,45 +93,17 @@
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>#84920</td>
-                                <td>Handmade Silver Ring...</td>
-                                <td><span class="text-green">+142</span></td>
-                                <td><span class="text-green">+24</span></td>
-                                <td><span class="score high">98.5</span></td>
-                                <td><button class="btn btn-xs">View</button></td>
-                            </tr>
-                            <tr>
-                                <td>#84112</td>
-                                <td>Custom Leather Wallet...</td>
-                                <td><span class="text-green">+89</span></td>
-                                <td><span class="text-green">+15</span></td>
-                                <td><span class="score high">85.2</span></td>
-                                <td><button class="btn btn-xs">View</button></td>
-                            </tr>
-                            <tr>
-                                <td>#99201</td>
-                                <td>Minimalist Desk Mat...</td>
-                                <td><span class="text-green">+64</span></td>
-                                <td><span class="text-green">+8</span></td>
-                                <td><span class="score medium">72.0</span></td>
-                                <td><button class="btn btn-xs">View</button></td>
-                            </tr>
-                            <tr>
-                                <td>#10294</td>
-                                <td>Personalized Dog Collar...</td>
-                                <td><span class="text-green">+45</span></td>
-                                <td><span class="text-yellow">+4</span></td>
-                                <td><span class="score medium">61.5</span></td>
-                                <td><button class="btn btn-xs">View</button></td>
-                            </tr>
+                        <tbody id="outliers-table-body">
+                            <!-- Populated by JS -->
                         </tbody>
                     </table>
                 </div>
             </section>
         </main>
     </div>
+    
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/dashboard.js"></script>
 </body>
 
 </html>

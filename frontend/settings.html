@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings - Outlume</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/index.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -64,10 +64,23 @@
                     <small style="color: var(--text-muted); display: block; margin-top: 0.25rem;">Multiplier applied to daily favorites to estimate daily sales.</small>
                 </div>
 
-                <button class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Save Settings</button>
+                <button id="save-btn" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Save Settings</button>
             </section>
         </main>
     </div>
+    <script>
+        document.getElementById('save-btn').addEventListener('click', () => {
+            const btn = document.getElementById('save-btn');
+            btn.innerText = "Settings Saved!";
+            btn.style.background = "var(--success)";
+            btn.style.borderColor = "var(--success)";
+            setTimeout(() => {
+                btn.innerText = "Save Settings";
+                btn.style.background = "var(--primary)";
+                btn.style.borderColor = "var(--primary)";
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>
